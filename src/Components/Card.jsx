@@ -11,7 +11,7 @@ const Card = ({ name, username, id }) => {
   const addFav = () => {
     if (isFavorite) {
       removeFromFavorites({ id });
-      setTimeout(() => alert("El dentista fue removido de favoritos."), 0);
+      setTimeout(() => alert("El dentista removido de favoritos."), 0);
     } else {
       addToFavorites({ id, name, username });
       setTimeout(() => alert("Dentista guardado en favoritos."), 0);
